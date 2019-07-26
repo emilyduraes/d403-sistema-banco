@@ -1,6 +1,17 @@
-<form method="POST">
+{{msg}}
+
+<form method="POST" action="/">
   {% csrf_token %}
   <input type="text" name="nome" placeholder="Nome">
   <input type="text" name="cpf" placeholder="CPF">
-  <button>Enviar</button>
+  <input type="email"name="email" placeholder="E-mail">
+  <input type="tel" name="telefone" placeholder="Telefone">
+  <label for="genero">Gênero</label>
+  <select name="genero">
+    <option value="F">Feminino</option>
+    <option value="M">Masculino</option>
+    <option value="O">Outros</option>
+  </select>
+  
+  <input type="submit" value="Cadastrar">
 </form>
