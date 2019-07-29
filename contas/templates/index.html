@@ -2,7 +2,7 @@
 
 <form method="POST" action="/">
   {% csrf_token %}
-  <input type="text" name="nome" placeholder="Nome">
+  <input type="text" name="nome" placeholder="Nome" required>
   <input type="text" name="cpf" placeholder="CPF">
   <input type="email"name="email" placeholder="E-mail">
   <input type="tel" name="telefone" placeholder="Telefone">
